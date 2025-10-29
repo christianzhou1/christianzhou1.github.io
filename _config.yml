@@ -113,12 +113,12 @@ content:
   - title: Skills
     layout: text
     content: |
-      **Programming Languages:** Python, Java, TypeScript, JavaScript, SQL, C++, Go  
-      **Frameworks & Libraries:** Spring Boot, React, Node.js, Express, Flask, Tailwind CSS  
-      **Databases:** PostgreSQL, MySQL, DynamoDB, MongoDB  
-      **DevOps & Tools:** Docker, GitHub Actions, AWS (EC2, S3, RDS), Vercel, Flyway, Nginx  
+      **Programming Languages:** Python, Java, TypeScript, JavaScript, SQL 
+      **Frameworks & Libraries:** Spring Boot, React, Node.js, Flask, Tailwind CSS  
+      **Databases:** PostgreSQL
+      **DevOps & Tools:** Docker, GitHub, AWS (EC2, S3, RDS), Vercel, Flyway, Nginx
       **Machine Learning:** scikit-learn, NumPy, pandas, Matplotlib  
-      **Other Skills:** API design, system architecture, cloud deployment, test automation, data visualization
+      **Other Skills:** system architecture, deployment automation, applied machine learning, data visualization
 
 # Footer
 footer_show_references: true
