@@ -41,7 +41,7 @@ linkedin_username: christian-zhou
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile.jpg
 about_content: |
-  I'm Christian Zhou — a Computer Science student passionate about software engineering, cloud deployment, and intelligent systems. I focus on building practical, scalable solutions that bridge backend efficiency with intuitive frontend design.
+  I'm Christian Zhou, a Computer Science student passionate about software engineering, cloud deployment, and intelligent systems. I focus on building practical, scalable solutions that bridge backend efficiency with intuitive frontend design.
 
   My work spans full-stack web applications using **Spring Boot**, **React**, and **PostgreSQL**, as well as **machine learning** and **data visualization** projects. I enjoy designing systems that automate workflows, analyze data, and improve user experience.
 
@@ -68,14 +68,19 @@ content:
             url: https://github.com/christianzhou1/the-todo-project
         quote: >
           Full-stack project inspired by production backend systems maintained during my co-op term.
-        description: | # this will include new lines to allow paragraphs
-          Inspired by my company's ongoing project, designed and developed a full-stack task management system modeled after an enterprise-grade Spring Boot architecture.
+        description: |
+          **The Todo Project** is a **full-stack task management system** built with a **Spring Boot + PostgreSQL** backend and a **React + TypeScript** frontend, inspired by enterprise-grade architecture from my co-op experience.
 
-          Implemented RESTful APIs, JWT authentication, file attachments via AWS S3, and OpenAPI-generated TypeScript clients for typed frontend integration.
+          **Key Features**
+          - **RESTful APIs** with **JWT authentication** and **role-based access control**
+          - **File attachments** stored via **AWS S3**, integrated with OpenAPI-generated TypeScript clients for type-safe frontend communication  
+          - **Containerized deployment** using **Docker Compose**, orchestrating backend, frontend, and database services  
+          - **Nginx reverse proxy** with **HTTPS (Certbot)** and **automated deployment scripts** written in Bash and PowerShell
 
-          Containerized and deployed backend, frontend, and database services using Docker Compose on a DigitalOcean VPS with Nginx reverse proxy, HTTPS (Certbot), and automated deployment scripts (Bash/PowerShell).
-
-          Focused on production-aligned design principles, service-layer separation, scalable schema design, and maintainable CI/CD-style workflows.
+          **Focus Areas**
+          - Production-aligned architecture emphasizing **service-layer separation**, **DTO mapping**, and **Flyway migrations**
+          - Scalable **PostgreSQL schema design** for multi-user and task-attachment relations  
+          - Maintainable **CI/CD-style workflow** mirroring real-world DevOps practices
   - title: Experience
     layout: list
     content:
