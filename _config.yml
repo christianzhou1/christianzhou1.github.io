@@ -40,14 +40,17 @@ linkedin_username: christian-zhou
 # About Section
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile.jpg
-about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+about_content: |
+  I'm Christian Zhou — a Computer Science student passionate about software engineering, cloud deployment, and intelligent systems. I focus on building practical, scalable solutions that bridge backend efficiency with intuitive frontend design.
 
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
+  My work spans full-stack web applications using **Spring Boot**, **React**, and **PostgreSQL**, as well as **machine learning** and **data visualization** projects. I enjoy designing systems that automate workflows, analyze data, and improve user experience.
+
+  Outside coursework, I explore **DevOps**, **AWS**, and **AI-driven knowledge tools**. I value clear architecture, reproducibility, and well-documented code.
+
+  - Core Skills: Java, Python, TypeScript, SQL, Docker  
+  - Interests: Cloud infrastructure, data pipelines, data analysis, and applied ML  
+  - [GitHub](https://github.com/christian-zhou) · [LinkedIn](https://linkedin.com/in/christian-zhou)
+
 
 content:
   - title: Projects # Title for the section
@@ -85,8 +88,11 @@ content:
           # Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
           • Maintained and enhanced the IT team’s Java Spring Boot backend repository, resolving bugs, improving service-layer documentation, and managing code changes with Git version control.
+          
           • Led WordPress malware remediation on SiteGround; removed PHP backdoors, purged ∼6,000 spam posts, implemented Apache protections, and achieved a clean Sucuri scan; consolidated domain/DNS records and automated billing extraction using Python regex.
+          
           • Self-Developed Project: Built a production-aligned application modeled after the company’s backend using Spring Boot, PostgreSQL, and React (Vite); implemented JWT authentication, AWS S3 integration, and OpenAPI-generated TypeScript clients.
+          
           • Containerized and deployed all services on a DigitalOcean VPS using Docker Compose and Nginx; automated deployment via Bash & PowerShell scripts; secured server with Ubuntu firewall & HTTPS.
   - title: Education
     layout: list
