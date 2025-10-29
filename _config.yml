@@ -69,7 +69,7 @@ content:
         quote: >
           Full-stack project inspired by production backend systems maintained during my co-op term.
         description: | # this will include new lines to allow paragraphs
-          Designed and developed a full-stack task management system modeled after an enterprise-grade Spring Boot architecture.
+          Inspired by my company's ongoing project, designed and developed a full-stack task management system modeled after an enterprise-grade Spring Boot architecture.
 
           Implemented RESTful APIs, JWT authentication, file attachments via AWS S3, and OpenAPI-generated TypeScript clients for typed frontend integration.
 
@@ -105,12 +105,15 @@ content:
           # Short institution or course description (optional)
         # description: | # this will include new lines to allow paragraphs
           # Description of qualification
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
-
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+  - title: Skills
+  layout: text
+  content: |
+    **Programming Languages:** Python, Java, TypeScript, JavaScript, SQL, C++, Go  
+    **Frameworks & Libraries:** Spring Boot, React, Node.js, Express, Flask, Tailwind CSS  
+    **Databases:** PostgreSQL, MySQL, DynamoDB, MongoDB  
+    **DevOps & Tools:** Docker, GitHub Actions, AWS (EC2, S3, RDS), Vercel, Flyway, Nginx  
+    **Machine Learning:** scikit-learn, NumPy, pandas, Matplotlib  
+    **Other Skills:** API design, system architecture, cloud deployment, test automation, data visualization
 
 # Footer
 footer_show_references: true
