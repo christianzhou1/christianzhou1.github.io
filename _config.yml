@@ -106,14 +106,14 @@ content:
         # description: | # this will include new lines to allow paragraphs
           # Description of qualification
   - title: Skills
-  layout: text
-  content: |
-    **Programming Languages:** Python, Java, TypeScript, JavaScript, SQL, C++, Go  
-    **Frameworks & Libraries:** Spring Boot, React, Node.js, Express, Flask, Tailwind CSS  
-    **Databases:** PostgreSQL, MySQL, DynamoDB, MongoDB  
-    **DevOps & Tools:** Docker, GitHub Actions, AWS (EC2, S3, RDS), Vercel, Flyway, Nginx  
-    **Machine Learning:** scikit-learn, NumPy, pandas, Matplotlib  
-    **Other Skills:** API design, system architecture, cloud deployment, test automation, data visualization
+    layout: text
+    content: |
+      **Programming Languages:** Python, Java, TypeScript, JavaScript, SQL, C++, Go  
+      **Frameworks & Libraries:** Spring Boot, React, Node.js, Express, Flask, Tailwind CSS  
+      **Databases:** PostgreSQL, MySQL, DynamoDB, MongoDB  
+      **DevOps & Tools:** Docker, GitHub Actions, AWS (EC2, S3, RDS), Vercel, Flyway, Nginx  
+      **Machine Learning:** scikit-learn, NumPy, pandas, Matplotlib  
+      **Other Skills:** API design, system architecture, cloud deployment, test automation, data visualization
 
 # Footer
 footer_show_references: true
