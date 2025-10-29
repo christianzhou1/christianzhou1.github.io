@@ -114,10 +114,15 @@ content:
     layout: text
     content: |
       **Programming Languages:** Python, Java, TypeScript, JavaScript, SQL 
+      
       **Frameworks & Libraries:** Spring Boot, React, Node.js, Flask, Tailwind CSS  
+      
       **Databases:** PostgreSQL
+      
       **DevOps & Tools:** Docker, GitHub, AWS (EC2, S3, RDS), Vercel, Flyway, Nginx
+      
       **Machine Learning:** scikit-learn, NumPy, pandas, Matplotlib  
+      
       **Other Skills:** system architecture, deployment automation, applied machine learning, data visualization
 
 # Footer
