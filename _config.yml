@@ -24,9 +24,9 @@ linkedin_username: christian-zhou
 
 # Additional icon links
 # additional_links:
-# - title: The Todo Project
+# - title: SkySync
   # icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-  # url: https://todo.christianzhou.com/
+  # url: https://skysync.christianzhou.com/
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
 #   url: Link url (eg. https://google.com)
@@ -59,28 +59,28 @@ content:
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
-        title: The Todo Project
-        link: https://todo.christianzhou.com/
-        link_text: https://todo.christianzhou.com/
+        title: SkySync
+        link: https://skysync.christianzhou.com/
+        link_text: https://skysync.christianzhou.com/
         additional_links:
           - title:  GitHub
             icon: fab fa-github
-            url: https://github.com/christianzhou1/the-todo-project
+            url: https://github.com/christianzhou1/skysync
         quote: >
-          Full-stack project inspired by production backend systems maintained during my co-op term.
+          Full-stack information management project inspired by production backend systems maintained during my co-op term.
         description: |
-          **The Todo Project** is a **full-stack task management system** built with a **Spring Boot + PostgreSQL** backend and a **React + TypeScript** frontend, inspired by enterprise-grade architecture from my co-op experience.
+          **SkySync** is a **full-stack information management system** built with a **Spring Boot + PostgreSQL** backend and a **React + TypeScript** frontend, inspired by enterprise-grade architecture from my co-op experience.
 
           **Key Features**
           - **RESTful APIs** with **JWT authentication** and **role-based access control**
-          - **File attachments** stored via **AWS S3**, integrated with OpenAPI-generated TypeScript clients for type-safe frontend communication  
+          - **File uploads** stored via **AWS S3**, integrated with OpenAPI-generated TypeScript clients for type-safe frontend communication  
           - **Containerized deployment** using **Docker Compose**, orchestrating backend, frontend, and database services  
           - **Nginx reverse proxy** with **HTTPS (Certbot)** and **automated deployment scripts** written in Bash and PowerShell
 
           **Focus Areas**
           - Production-aligned architecture emphasizing **service-layer separation**, **DTO mapping**, and **Flyway migrations**
           - Scalable **PostgreSQL schema design** for multi-user and task-attachment relations  
-          - Maintainable **CI/CD-style workflow** mirroring real-world DevOps practices
+          - Automated **CI/CD workflow** automating DevOps practices
   - title: Experience
     layout: list
     content:
