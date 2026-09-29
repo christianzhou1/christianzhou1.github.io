@@ -1,6 +1,5 @@
 # Site
 repository: christianzhou1/christianzhou1.github.io
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
 # Content configuration version
 version: 2
@@ -9,138 +8,131 @@ version: 2
 name: Christian Zhou
 title: McMaster Computer Science Co-op
 email: zhouz229 at mcmaster dot ca
-# email_title: Email (Email title override)
-# phone: 
-# phone_title: Phone (Phone title override)
-# website: 
-# website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
-github_username:  christianzhou1
+github_username: christianzhou1
 linkedin_username: christian-zhou
 
-# Additional icon links
-# additional_links:
-# - title: SkySync
-  # icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-  # url: https://skysync.christianzhou.com/
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
-
 # About Section
-# about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile.jpg
 about_content: |
-  I'm Christian Zhou, a Computer Science student passionate about software engineering, cloud deployment, and intelligent systems. I focus on building practical, scalable solutions that bridge backend efficiency with intuitive frontend design.
+  I am a Computer Science co-op student at McMaster University (B.A.Sc., April 2027; cGPA 10.2/12). I am looking for new-grad software roles and a Fall 2027 master's in applied systems.
 
-  My work spans full-stack web applications using **Spring Boot**, **React**, and **PostgreSQL**, as well as **machine learning** and **data visualization** projects. I enjoy designing systems that automate workflows, analyze data, and improve user experience.
+  I build device-to-dashboard systems: firmware and MQTT on the device, a FastAPI and PostgreSQL API in the middle, and a React dashboard on top. My co-op work was a Java Spring Boot API, including response contracts, server hardening, and data automation.
 
-  Outside coursework, I explore **DevOps**, **AWS**, and **AI-driven knowledge tools**. I value clear architecture, reproducibility, and well-documented code.
-
-  - Core Skills: Java, Python, TypeScript, SQL, Docker  
-  - Interests: Cloud infrastructure, data pipelines, data analysis, and applied ML  
-  - [GitHub](https://github.com/christian-zhou) · [LinkedIn](https://linkedin.com/in/christian-zhou)
-
+  - Core skills: Java, Python, C++, TypeScript, SQL, FastAPI, Spring Boot, Docker
+  - Interests: IoT telemetry, APIs, operational dashboards, and applied machine learning
+  - [GitHub](https://github.com/christianzhou1) · [LinkedIn](https://linkedin.com/in/christian-zhou)
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Projects
+    layout: list
     content:
       - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
+        border: weak
+        title: Smart Plant Platform
+        link: https://github.com/christianzhou1/smart-plant-platform
+        link_text: github.com/christianzhou1/smart-plant-platform
+        additional_links:
+          - title: GitHub
+            icon: fab fa-github
+            url: https://github.com/christianzhou1/smart-plant-platform
+        quote: >
+          Device-to-dashboard system: ESP32 telemetry, a FastAPI and PostgreSQL API, and a React UI.
+        description: |
+          **Smart Plant Platform** is an end-to-end sensing stack. An ESP32 node publishes sensor readings, and a web app stores them, aggregates them, and shows the result.
+
+          **Pipeline**
+          - **ESP32 firmware in C++** reads plant and room sensors and publishes **MQTT** telemetry
+          - **FastAPI** and **PostgreSQL** ingest those messages and serve time-binned history
+          - The API derives **climate metrics** (VPD, PPFD, and DLI) from stored temperature, humidity, and light readings
+          - A **React** dashboard shows the charts and those metrics
+
+          **Status**
+          - Runs locally and is packaged with **Docker Compose**
+          - Public deployment, the mobile app, and NFC tagging are still in progress
+      - layout: left
+        border: weak
+        title: Medical Device Supply Disruption Dashboard
+        quote: >
+          Two-term capstone: a predictive analytics dashboard for medical-device supply disruptions.
+        description: |
+          Course capstone (September 2026 – April 2027) with a healthcare supply-chain, procurement, and back-office partner.
+
+          **Scope**
+          - Building a dashboard for disruption events in medical-device supply
+          - The partner has committed proprietary historical disruption data
+          - Forecasting and the dashboard are in progress
+      - layout: left
         title: SkySync
         link: https://skysync.christianzhou.com/
         link_text: https://skysync.christianzhou.com/
         additional_links:
-          - title:  GitHub
+          - title: GitHub
             icon: fab fa-github
             url: https://github.com/christianzhou1/skysync
         quote: >
-          Full-stack information management project inspired by production backend systems maintained during my co-op term.
+          Full-stack file storage app with a Spring Boot API, PostgreSQL, and a React client.
         description: |
-          **SkySync** is a **full-stack information management system** built with a **Spring Boot + PostgreSQL** backend and a **React + TypeScript** frontend, inspired by enterprise-grade architecture from my co-op experience.
+          **SkySync** is a file-storage application deployed on a Linux VPS.
 
-          **Key Features**
-          - **RESTful APIs** with **JWT authentication** and **role-based access control**
-          - **File uploads** stored via **AWS S3**, integrated with OpenAPI-generated TypeScript clients for type-safe frontend communication  
-          - **Containerized deployment** using **Docker Compose**, orchestrating backend, frontend, and database services  
-          - **Nginx reverse proxy** with **HTTPS (Certbot)** and **automated deployment scripts** written in Bash and PowerShell
+          **Stack**
+          - **Spring Boot** and **PostgreSQL** API, with **JWT** authentication and **DTO** response contracts
+          - **React** and **TypeScript** client, including an OpenAPI-generated client
+          - File storage on **AWS S3**
+          - **Docker Compose**, **Nginx** with HTTPS, and **GitHub Actions** for unit and integration tests
 
-          **Focus Areas**
-          - Production-aligned architecture emphasizing **service-layer separation**, **DTO mapping**, and **Flyway migrations**
-          - Scalable **PostgreSQL schema design** for multi-user and task-attachment relations  
-          - Automated **CI/CD workflow** automating DevOps practices
   - title: Experience
     layout: list
     content:
       - layout: right
-        title: IDI-Itech Development Inc.
-        sub_title: Website Developer
-        caption: September 2025 - December 2025
-        # link: Link to company (optional)
-        # quote: >
-          # Short description of the company (optional)
-        description: | # this will include new lines to allow paragraphs
-          • Maintained and enhanced the IT team’s Java Spring Boot backend repository, resolving bugs, improving service-layer documentation, and managing code changes with Git version control.
-          
-          • Led WordPress malware remediation on SiteGround; removed PHP backdoors, purged ∼6,000 spam posts, implemented Apache protections, and achieved a clean Sucuri scan; consolidated domain/DNS records and automated billing extraction using Python regex.
-          
-          • Self-Developed Project: Built a production-aligned application modeled after the company’s backend using Spring Boot, PostgreSQL, and React (Vite); implemented JWT authentication, AWS S3 integration, and OpenAPI-generated TypeScript clients.
-          
-          • Containerized and deployed all services on a DigitalOcean VPS using Docker Compose and Nginx; automated deployment via Bash & PowerShell scripts; secured server with Ubuntu firewall & HTTPS.
+        title: IDI-ITech Development Inc.
+        sub_title: Website Developer Co-op
+        caption: September 2025 – December 2025
+        description: |
+          - Refactored Java Spring Boot service-layer logic and used DTOs so API responses did not expose sensitive fields.
+          - Led malware remediation, removing about 6,000 spam posts and hardening the server with restricted file permissions and Apache security settings.
+          - Wrote Python scripts to automate administrative data extraction and DNS consolidation.
+
   - title: Education
     layout: list
     content:
       - layout: top-right
         title: McMaster University
-        sub_title: BASc, Computer Science Co-op
-        caption: 2022-2027
-        # quote: >
-          # Short institution or course description (optional)
-        # description: | # this will include new lines to allow paragraphs
-          # Description of qualification
+        sub_title: B.A.Sc., Honours Computer Science Co-op
+        caption: September 2022 – April 2027
+        description: |
+          Cumulative average 10.2/12.
+
+          Relevant coursework: Databases, Applications of Machine Learning, Data-Driven Algorithms, Computer Networks and Security, Operating Systems, Statistical Methods and Application.
+
   - title: Skills
     layout: text
     content: |
-      **Programming Languages:** Python, Java, TypeScript, JavaScript, SQL 
-      
-      **Frameworks & Libraries:** Spring Boot, React, Node.js, Flask, Tailwind CSS  
-      
-      **Databases:** PostgreSQL
-      
-      **DevOps & Tools:** Docker, GitHub, AWS (S3), Vercel, Flyway, Nginx
-      
-      **Machine Learning:** scikit-learn, NumPy, pandas, Matplotlib
-      
-      **Other Skills:** system architecture, deployment automation, applied machine learning, data visualization
+      **Languages:** Python, Java, C++, TypeScript, JavaScript, SQL, Bash
+
+      **Backend and data:** FastAPI, Spring Boot, JUnit, REST APIs, PostgreSQL, MQTT, Alembic
+
+      **Frontend:** React, TypeScript
+
+      **DevOps:** Docker, Docker Compose, GitHub Actions, AWS S3, Nginx, Linux
+
+      **Analysis:** pandas, NumPy, Matplotlib; machine learning coursework
 
 # Footer
 footer_show_references: true
-# references_title: References on request (Override references text)
-
-# Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
 
 sass:
   sass_dir: _sass
   style: compressed
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag
 
-exclude : [
+exclude: [
   "Gemfile",
   "Gemfile.lock",
   "node_modules",
@@ -151,4 +143,4 @@ exclude : [
   "lib/",
   "scripts/",
   "docker-compose.yml",
-  ]
+]
