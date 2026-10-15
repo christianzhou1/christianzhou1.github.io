@@ -34,26 +34,28 @@ content:
       - layout: left
         border: weak
         title: Smart Plant Platform
-        link: https://github.com/christianzhou1/smart-plant-platform
-        link_text: github.com/christianzhou1/smart-plant-platform
+        link: https://smartplant.christianzhou.com
+        link_text: smartplant.christianzhou.com
         additional_links:
           - title: GitHub
             icon: fab fa-github
             url: https://github.com/christianzhou1/smart-plant-platform
         quote: >
-          Device-to-dashboard system: ESP32 telemetry, a FastAPI and PostgreSQL API, and a React UI.
+          Deployed device-to-dashboard system: ESP32 telemetry, a FastAPI and PostgreSQL API, and a React UI with regression and watering-event analysis.
         description: |
-          **Smart Plant Platform** is an end-to-end sensing stack. An ESP32 node publishes sensor readings, and a web app stores them, aggregates them, and shows the result.
-
+          **Smart Plant Platform** is an end-to-end sensing stack. An ESP32 node publishes sensor readings, and a web app stores them, aggregates them, and shows the result. Live at [smartplant.christianzhou.com](https://smartplant.christianzhou.com).
+      
           **Pipeline**
           - **ESP32 firmware in C++** reads plant and room sensors and publishes **MQTT** telemetry
           - **FastAPI** and **PostgreSQL** ingest those messages and serve time-binned history
           - The API derives **climate metrics** (VPD, PPFD, and DLI) from stored temperature, humidity, and light readings
           - A **React** dashboard shows the charts and those metrics
-
+          - **Linear regression** on moisture and climate trends, plus **watering-event detection** from moisture surges
+      
           **Status**
-          - Runs locally and is packaged with **Docker Compose**
-          - Public deployment, the mobile app, and NFC tagging are still in progress
+          - Deployed with **Docker Compose** on a Linux VPS at [smartplant.christianzhou.com](https://smartplant.christianzhou.com)
+          - Mobile app and NFC tagging are still in progress
+          
       - layout: left
         border: weak
         title: Medical Device Supply Disruption Dashboard
