@@ -6,7 +6,7 @@ version: 2
 
 # Personal info
 name: Christian Zhou
-title: McMaster Computer Science Co-op
+title: McMaster Computer Science
 email: zhouz229 at mcmaster dot ca
 
 # Dark Mode (true/false/never)
@@ -19,7 +19,7 @@ linkedin_username: christian-zhou
 # About Section
 about_profile_image: images/profile.jpg
 about_content: |
-  I am a Computer Science co-op student at McMaster University (B.A.Sc., April 2027; cGPA 10.2/12). I am looking for new-grad software roles and a Fall 2027 master's in applied systems.
+  I am a Computer Science student at McMaster University (B.A.Sc., April 2027; cGPA 10.2/12). I am looking for new-grad software roles and a Fall 2027 master's in applied systems.
 
   I build device-to-dashboard systems: firmware and MQTT on the device, a FastAPI and PostgreSQL API in the middle, and a React dashboard on top. My co-op work was a Java Spring Boot API, including response contracts, server hardening, and data automation.
 
