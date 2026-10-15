@@ -43,7 +43,7 @@ content:
         quote: >
           Deployed device-to-dashboard system: ESP32 telemetry, a FastAPI and PostgreSQL API, and a React UI with regression and watering-event analysis.
         description: |
-          **Smart Plant Platform** is an end-to-end sensing stack. An ESP32 node publishes sensor readings, and a web app stores them, aggregates them, and shows the result. Live at [smartplant.christianzhou.com](https://smartplant.christianzhou.com).
+          **Smart Plant Platform** is an end-to-end sensing stack. An ESP32 node publishes sensor readings, and a web app stores them, aggregates them, and shows the result.
       
           **Pipeline**
           - **ESP32 firmware in C++** reads plant and room sensors and publishes **MQTT** telemetry
